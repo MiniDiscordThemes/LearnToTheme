@@ -1,10 +1,17 @@
 ---
 ---
+// Own additions
+$body-bg-color: #202020;
+$header-nav-width: 24rem;
 
 // Override defaults
 
+// Breakpoints
+$large-breakpoint: calc(64em + $header-nav-width);
+$medium-breakpoint: calc(42em + $header-nav-width);
+
 // Headers
-// $header-heading-color: #fff !default;
+$header-heading-color: #fff;
 $header-bg-color: #9b5816;
 $header-bg-color-secondary: #6c00c4;
 
@@ -12,7 +19,7 @@ $header-bg-color-secondary: #6c00c4;
 $section-headings-color: #a47242;
 $body-text-color: #8a8a8a;
 $body-link-color: #8971bd;
-$blockquote-text-color: #819198 !default;
+$blockquote-text-color: #819198;
 
 // Code
 $code-bg-color: #2f2f2f;
@@ -22,9 +29,6 @@ $code-text-color: #b3978a;
 $border-color: #544b57;
 $table-border-color: #544b57;
 $hr-border-color: #544b57;
-
-// Own additions
-$body-bg-color: #202020;
 
 @import "{{ site.theme }}";
 
@@ -43,17 +47,51 @@ body {
     justify-content: center;
 }
 
-@media screen and (min-width: 64em) {
-    .main-content {
-        max-width: 64rem;
+.page-wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    @include large {
         padding: 2rem 6rem;
-        margin: 0 auto;
-        font-size: 1.1rem;
+        gap: 2rem;
+    }
+
+    @include medium {
+        padding: 2rem 4rem;
+        gap: 2rem;
+    }
+
+    @include small {
+        padding: 2rem 1rem;
+        gap: 2rem;
     }
 }
 
-// Headings navigation
 .headings-nav {
+    width: $header-nav-width;
+    font-size: 1.1rem;
+
+    li {
+        list-style: none;
+    }
+    
+    a {
+        color: $section-headings-color;
+    }
+}
+
+.main-content {
+    @include large {
+        padding: 0;
+    }
+
+    @include medium {
+        padding: 0;
+    }
+
+    @include small {
+        padding: 0;
+    }
 }
 
 // Formatted code block
