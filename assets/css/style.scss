@@ -39,6 +39,10 @@ body {
 // Header
 .page-header {
     border-bottom: 0.5rem solid $border-color;
+    
+    a {
+        color: inherit;
+    }
 }
 
 // Buttons
