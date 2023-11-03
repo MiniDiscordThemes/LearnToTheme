@@ -3,5 +3,13 @@
   "tabWidth": 2,
   "useTabs": false,
   "semi": true,
-  "singleQuote": false
+  "singleQuote": false,
+  "overrides": [
+    {
+      "files": "*.scss",
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
 }
