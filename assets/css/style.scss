@@ -1,6 +1,18 @@
 ---
 ---
+$header-bg-color: #6f15b8;
+$header-bg-color-secondary: #4e2802;
 
 @import "{{ site.theme }}";
 
-// other stuff
+body {
+    background: invert($body-text-color);
+}
+
+// Step navigation
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}

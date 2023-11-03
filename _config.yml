@@ -3,3 +3,7 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: Learn To Theme
 description: A step-by-step guide to creating Discord themes, from beginner to advanced.
+
+github:
+  owner_url: https://github.com/Saltssaumure
+  owner_name: Saltssaumure
