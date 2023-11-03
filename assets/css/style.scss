@@ -1,32 +1,15 @@
 ---
 ---
-
-// Headers
-// $header-heading-color: #fff !default;
-$header-bg-color: #9b5816;
-$header-bg-color-secondary: #6c00c4;
-
-// Text
-$section-headings-color: #a47242;
-$body-text-color: #8a8a8a;
-$body-link-color: #8971bd;
-$blockquote-text-color: #819198 !default;
-
-// Code
-$code-bg-color: #2f2f2f;
-$code-text-color: #b3978a;
-
-// Borders
-$border-color: #544b57;
-$table-border-color: #544b57;
-$hr-border-color: #544b57;
-
+@use "vars" as *;
 @import "{{ site.theme }}";
-
-$body-bg-color: #202020;
 
 body {
     background: $body-bg-color;
+}
+
+// Header
+.page-header {
+    border-bottom: 0.5rem solid $border-color;
 }
 
 // Step navigation
@@ -35,4 +18,19 @@ body {
     justify-content: center;
     position: sticky;
     top: 0;
+}
+
+// Formatted code block
+.main-content .highlight pre, .main-content pre {
+    border-radius: 0;
+}
+
+// Footer
+.site-footer {
+    margin-top: 10rem;
+    border-top-width: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(120deg, transparentize(#6c00c4, 0.7), transparentize(#9b5816, 0.7))
 }

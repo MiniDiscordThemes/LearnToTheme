@@ -1,8 +1,6 @@
-[bd]: ../assets/img/icon/bd.png
-[rp]: ../assets/img/icon/rp.png
-[vc]: ../assets/img/icon/vc.png
-
-# [Learn To Theme](./index.md)
+[bd]: assets/img/icon/bd.png
+[rp]: assets/img/icon/rp.png
+[vc]: assets/img/icon/vc.png
 
 ## <span title="Too long; didn't read">TL;DR</span>
 - *If you just want to set a colour scheme with a background image, and don't have the time or energy to read this page, use [bdeditor.dev](https://bdeditor.dev/).*
