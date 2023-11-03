@@ -2,7 +2,7 @@
 ---
 // Own additions
 $body-bg-color: #202020;
-$header-nav-width: 24em;
+$header-nav-width: 18em;
 
 // Override defaults
 
@@ -65,6 +65,10 @@ body {
         padding: 2rem 1rem;
         gap: 1rem;
     }
+
+    :is(h1, h2, h3, h4, h5, h6) {
+        color: $section-headings-color;
+    }
 }
 
 .headings-nav {
@@ -84,23 +88,24 @@ body {
         font-size: 1rem;
     }
 
+    h2 {
+        border-bottom: 0.2rem solid $border-color;
+    }
+
     li {
         list-style: none;
     }
-    
-    a {
-        color: $section-headings-color;
-    }
 }
 
-.main-content {
+.main-content {    
     @include large {
         max-width: 64rem;
-        margin: 0 auto;
+        margin-right: auto;
         font-size: 1.1rem;
     }
 
     @include medium {
+        max-width: 42rem;
         font-size: 1.1rem;
     }
 
