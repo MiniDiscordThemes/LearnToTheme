@@ -38,15 +38,19 @@ body {
 }
 
 // Step navigation
-.navbar {
+.steps-nav {
     display: flex;
     justify-content: center;
-    position: sticky;
-    top: 0;
+}
+
+// Headings navigation
+.headings-nav {
+
 }
 
 // Formatted code block
-.main-content .highlight pre, .main-content pre {
+.main-content .highlight pre,
+.main-content pre {
     border-radius: 0;
 }
 
