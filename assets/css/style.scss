@@ -63,13 +63,15 @@ body {
 
     @include small {
         padding: 2rem 1rem;
-        gap: 2rem;
+        gap: 1rem;
     }
 }
 
 .headings-nav {
     width: $header-nav-width;
     font-size: 1.1rem;
+    position: sticky;
+    top: 0;
 
     li {
         list-style: none;
@@ -82,15 +84,17 @@ body {
 
 .main-content {
     @include large {
-        padding: 0;
+        max-width: 64rem;
+        margin: 0 auto;
+        font-size: 1.1rem;
     }
 
     @include medium {
-        padding: 0;
+        font-size: 1.1rem;
     }
 
     @include small {
-        padding: 0;
+        font-size: 1rem;
     }
 }
 
