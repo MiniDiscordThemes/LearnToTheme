@@ -1,6 +1,31 @@
 ---
 ---
-@use "vars" as *;
+
+// Override defaults
+
+// Headers
+// $header-heading-color: #fff !default;
+$header-bg-color: #9b5816;
+$header-bg-color-secondary: #6c00c4;
+
+// Text
+$section-headings-color: #a47242;
+$body-text-color: #8a8a8a;
+$body-link-color: #8971bd;
+$blockquote-text-color: #819198 !default;
+
+// Code
+$code-bg-color: #2f2f2f;
+$code-text-color: #b3978a;
+
+// Borders
+$border-color: #544b57;
+$table-border-color: #544b57;
+$hr-border-color: #544b57;
+
+// Own additions
+$body-bg-color: #202020;
+
 @import "{{ site.theme }}";
 
 body {
