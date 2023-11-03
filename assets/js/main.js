@@ -1,9 +1,7 @@
 $(function () {
   $("main h3").each(function () {
-    $("nav ul").append(
-      "<li class='tag-" +
-        this.nodeName.toLowerCase() +
-        "'><a href='#" +
+    $(".headings-nav ul").append(
+      "<li><a href='#" +
         $(this)
           .text()
           .toLowerCase()
@@ -21,6 +19,5 @@ $(function () {
         .replace(/ /g, "-")
         .replace(/[^\w-]+/g, "")
     );
-    $("nav ul li:first-child a").parent().addClass("active");
   });
 });

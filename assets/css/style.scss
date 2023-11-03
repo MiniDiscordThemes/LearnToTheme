@@ -41,24 +41,32 @@ body {
     border-bottom: 0.5rem solid $border-color;
 }
 
+// Buttons
+.btn {
+    @include small {
+        margin-top: 1rem;
+    }
+}
+
 // Step navigation
 .steps-nav {
     display: flex;
     justify-content: center;
 }
 
+// Heading navigation + content wrapper
 .page-wrapper {
     display: flex;
     align-items: flex-start;
 
     @include large {
         padding: 2rem 6rem;
-        gap: 2rem;
+        gap: 6rem;
     }
 
     @include medium {
         padding: 2rem 4rem;
-        gap: 2rem;
+        gap: 4rem;
     }
 
     @include small {
@@ -73,36 +81,47 @@ body {
     }
 }
 
+// Headings navigation
 .headings-nav {
     width: $header-nav-width;
     position: sticky;
-    top: 0;
 
     @include large {
         font-size: 1.1rem;
+        top: 1.1rem;
+        margin-top: 1.1rem;
     }
 
     @include medium {
         font-size: 1.1rem;
+        top: 1.1rem;
+        margin-top: 1.1rem;
     }
 
     @include small {
         font-size: 1rem;
+        top: 1rem;
+        margin-top: 1rem;
     }
 
     h2 {
         border-bottom: 0.2rem solid $border-color;
+        margin-top: 0;
+        padding-bottom: 0.5rem;
+    }
 
-        &:first-child {
-            margin-top: 0;
-        }
+    ul {
+        padding-left: 1rem;
     }
 
     li {
-        list-style: none;
+        list-style: square;
+        color: $body-link-color;
+        padding: 0.2rem;
     }
 }
 
+// Actual content
 .main-content {    
     @include large {
         margin: 0;
