@@ -67,7 +67,9 @@ body {
     }
 
     :is(h1, h2, h3, h4, h5, h6) {
+        font-weight: normal;
         color: $section-headings-color;
+        margin-bottom: 1rem;
     }
 }
 
@@ -90,6 +92,10 @@ body {
 
     h2 {
         border-bottom: 0.2rem solid $border-color;
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 
     li {
@@ -99,18 +105,17 @@ body {
 
 .main-content {    
     @include large {
-        max-width: 64rem;
+        margin: 0;
+        padding: 0;
         margin-right: auto;
-        font-size: 1.1rem;
     }
 
     @include medium {
-        max-width: 42rem;
-        font-size: 1.1rem;
+        padding: 0;
     }
 
     @include small {
-        font-size: 1rem;
+        padding: 0;
     }
 }
 
